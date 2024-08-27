@@ -8,17 +8,12 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8"/>
         <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0"/>
-        <ProjectReference Include="..\RacingLeaderboards.Application\RacingLeaderboards.Application.csproj" />
+        <ProjectReference Include="..\RacingLeaderboards.Application\RacingLeaderboards.Application.csproj"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.7"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Models\" />
-      <Folder Include="Repositories\" />
     </ItemGroup>
 
 </Project>

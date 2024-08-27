@@ -10,8 +10,8 @@ public static class ServiceCollectionExtensions
     {
         services.AddDbContext<RacingLeaderboardsDbContext>(opt =>
         {
-            var connectionString = configuration.GetConnectionString("SqliteLocal");
-            opt.UseSqlite(connectionString);
+            var connectionString = configuration.GetConnectionString("SqlServer");
+            opt.UseSqlServer(connectionString);
         });
 
         return services;
